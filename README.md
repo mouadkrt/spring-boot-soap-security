@@ -65,9 +65,6 @@ Wss4jSecurityInterceptor JavaDoc(https://docs.spring.io/spring-ws/docs/2.2.4.REL
 Wss4jSecurityInterceptor Documentation(https://docs.spring.io/spring-ws/docs/2.2.4.RELEASE/reference/htmlsingle/#security-wss4j-security-interceptor) 
 
  
-
-
-
 ## Ejemplo llamada desde SOAP UI
 
 Realizar la llamada desde el cliente de java RunClient => copiar y pegar desde la consola SOAP-ENV:Envelope completo para realizar peticion desde SOAP UI.
@@ -76,3 +73,17 @@ Realizar la llamada desde el cliente de java RunClient => copiar y pegar desde l
 
 			
 			 
+# Muis - Begin
+Use JAVA_HOME=C:\Program Files\Java\jdk1.8.0_202
+and PATH C:\Program Files\Java\jdk1.8.0_202\bin
+
+https://github.com/mouadkrt/spring-boot-soap-security
+mvn spring-boot:run
+http://localhost:8080/ws/beers.wsdl
+
+This github code contains originaly both SOAP client and server with their main classes
+To specifie wich main() function to run add this to pom.xml
+<properties>
+	<start-class>com.memorynotfound.server.RunServer</start-class>
+</properties>
+## MUIS - END
